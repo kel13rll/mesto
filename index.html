@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="root">
+
+  <div class="page">
+
+    <header class="header">
+      <img src="./images/icons/logo.svg" alt="логотип место" class="header__logo">
+    </header>
+
+    <main class="main">
+
+      <section class="profile">
+        <div class="profile__ava"></div>
+
+        <div class="profile__info">
+          <div class="profile__info-wrap">
+            <h1 class="profile__name">Ваше имя</h1>
+            <button type="button" class="profile__edit-btn"></button>
+          </div>
+          <p class="profile__career">Род деятельности</p>
+        </div>
+        <button type="button" class="profile__add-btn"></button>
+      </section>
+
+      <section class="elements">
+        <article class="element">
+          <img src="images/amber-kipp-astonishment-min.jpg" alt="удивлённый котик" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Удивление</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+        <article class="element">
+          <img src="images/hang-niu-eat-min.jpg" alt="котик просит есть" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Просит есть</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+        <article class="element">
+          <img src="images/jonas-vincent-five-min.jpg" alt="котик даёт пять" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Пятюня</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+        <article class="element">
+          <img src="images/kanashi-BLW-important-min.jpg" alt="важный котик" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Важный</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+        <article class="element">
+          <img src="images/mikhail-vasilyev-hunt-min.jpg" alt="котик притаился" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Притаился</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+        <article class="element">
+          <img src="images/paul-hanaoka-evil-min.jpg" alt="злой котик" class="element__img">
+        <div class="element__wrap">
+          <h2 class="element__title">Злой</h2>
+          <button class="element__like"></button>
+        </div>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copy">&copy;&nbsp;2021 Mesto Russia</p>
+    </footer>
+
+    <section class="popup">
+      <div class="popup__wrap">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="pupup__form">
+          <input type="text" class="popup__text" name="popup_name">
+          <input type="text" class="popup__text" name="popup_career">
+          <button type="submit" class="popup__save">Сохранить</button>
+        </form>
+        <button type="button" class="popup__close"></button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.pupup__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 41px;
+}
+
+@media screen and (max-width: 767px) {
+  .pupup__form {
+    margin-top: 62px;
+  }
+}

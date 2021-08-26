@@ -1,0 +1,17 @@
+.profile__ava {
+  border-radius: 50%;
+  min-width: 120px;
+  height: 120px;
+  background-image: url(../../../images/ava-min.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__ava {
+    flex-direction: column;
+    margin: 0;
+  }
+}

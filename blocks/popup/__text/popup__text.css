@@ -1,0 +1,19 @@
+.popup__text {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  transition: all .5s;
+  margin-top: 17px;
+}
+
+.popup__text:first-of-type {
+  margin-top: 0;
+}
+
+.popup__text:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
