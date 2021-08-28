@@ -12,66 +12,66 @@
   <div class="page">
 
     <header class="header">
-      <img src="./images/icons/logo.svg" alt="логотип место" class="header__logo">
+      <a href="#" class="header__logo"></a>
     </header>
 
     <main class="main">
 
       <section class="profile">
-        <div class="profile__ava"></div>
+        <img src="./images/ava-min.jpg" alt="фото профиля" class="profile__ava">
 
         <div class="profile__info">
           <div class="profile__info-wrap">
             <h1 class="profile__name">Ваше имя</h1>
-            <button type="button" class="profile__edit-btn"></button>
+            <button aria-label="редактировать имя и род деятельности" type="button" class="profile__edit-btn"></button>
           </div>
           <p class="profile__career">Род деятельности</p>
         </div>
-        <button type="button" class="profile__add-btn"></button>
+        <button aria-label="добавить пост на страницу" type="button" class="profile__add-btn"></button>
       </section>
 
       <section class="elements">
         <article class="element">
           <img src="images/amber-kipp-astonishment-min.jpg" alt="удивлённый котик" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Удивление</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Удивление</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
         <article class="element">
           <img src="images/hang-niu-eat-min.jpg" alt="котик просит есть" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Просит есть</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Просит есть</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
         <article class="element">
           <img src="images/jonas-vincent-five-min.jpg" alt="котик даёт пять" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Пятюня</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Пятюня</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
         <article class="element">
           <img src="images/kanashi-BLW-important-min.jpg" alt="важный котик" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Важный</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Важный</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
         <article class="element">
           <img src="images/mikhail-vasilyev-hunt-min.jpg" alt="котик притаился" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Притаился</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Притаился</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
         <article class="element">
           <img src="images/paul-hanaoka-evil-min.jpg" alt="злой котик" class="element__img">
-        <div class="element__wrap">
-          <h2 class="element__title">Злой</h2>
-          <button class="element__like"></button>
-        </div>
+          <div class="element__wrap">
+            <h2 class="element__title">Злой</h2>
+            <button type="button" aria-label="нравится" class="element__like"></button>
+          </div>
         </article>
       </section>
 
@@ -81,17 +81,19 @@
       <p class="footer__copy">&copy;&nbsp;2021 Mesto Russia</p>
     </footer>
 
-    <section class="popup">
-      <div class="popup__wrap">
-        <button type="button" class="popup__close"></button>
+    <article class="popup">
+      <div class="popup__content">
+        <button aria-label="закрыть" type="button" class="popup__close"></button>
         <form class="popup__form" name="popup_form">
           <h2 class="popup__title">Редактировать профиль</h2>
-          <input type="text" class="popup__text" name="popup_name">
-          <input type="text" class="popup__text" name="popup_career">
+          <div class="popup__text-wrap">
+            <input type="text" class="popup__text" name="popup_name">
+            <input type="text" class="popup__text" name="popup_career">
+          </div>
           <button type="submit" class="popup__save">Сохранить</button>
         </form>
       </div>
-    </section>
+    </article>
 
   </div>
 

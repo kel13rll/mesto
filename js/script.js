@@ -5,8 +5,7 @@ let nameProfile = document.querySelector('.profile__name');
 let careerProfile = document.querySelector('.profile__career');
 let namePopup = document.querySelector('[name="popup_name"]');
 let careerPopup = document.querySelector('[name="popup_career"]');
-let formPopup = document.querySelector('.pupup__form');
-let formPopupSubBtn = document.querySelector('.popup__save');
+let formPopup = document.querySelector('.popup__form');
 
 function togglePopup() {
   if (!popup.classList.contains('popup_open')) {
@@ -20,13 +19,12 @@ function togglePopup() {
 editPopupBtn.addEventListener('click', togglePopup);
 closePopupBtn.addEventListener('click', togglePopup);
 
-formPopup.addEventListener (
-  'submit',
-  function (evt) {
-    evt.preventDefault();
+function handleFormSubmit (evt) {
+  evt.preventDefault();
 
-    nameProfile.textContent = namePopup.value;
-    careerProfile.textContent = careerPopup.value;
-    togglePopup();
-  }
-);
+  nameProfile.textContent = namePopup.value;
+  careerProfile.textContent = careerPopup.value;
+  togglePopup();
+}
+
+formPopup.addEventListener ('submit', handleFormSubmit);

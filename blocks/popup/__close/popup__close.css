@@ -26,5 +26,6 @@
     right: 0;
     width: 20px;
     height: 20px;
+    background-image: url(../../../images/icons/close_small.svg);
   }
 }

@@ -1,6 +1,21 @@
+.header__logo {
+  display: block;
+  width: 143px;
+  height: 33px;
+  background-image: url(../../../images/icons/logo.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .2s all;
+}
+
 @media screen and (max-width: 767px) {
   .header__logo {
     width: 103px;
+    height: 24px;
   }
 }
 
+.header__logo:hover {
+  opacity: .6;
+}
